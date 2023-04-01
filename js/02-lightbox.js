@@ -16,4 +16,9 @@ for (const image of galleryItems) {
   gallery.innerHTML += newImage;
 }
 
-const lightbox = new SimpleLightbox(".gallery a", {});
+const lightbox = new SimpleLightbox(".gallery a", {
+  captions: true,
+  captionsData: "alt",
+  captionPosition: "bottom",
+  captionDelay: 250,
+});
